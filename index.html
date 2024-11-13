@@ -4,10 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | 3D project</title>
-     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-    <script>
-      vkBridge.send("VKWebAppInit", {});
-    </script>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -63,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/игра.loader.js";
       var config = {
-        dataUrl: buildUrl + "/игра.data.gz",
-        frameworkUrl: buildUrl + "/игра.framework.js.gz",
-        codeUrl: buildUrl + "/игра.wasm.gz",
+        dataUrl: buildUrl + "/игра.data",
+        frameworkUrl: buildUrl + "/игра.framework.js",
+        codeUrl: buildUrl + "/игра.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "3D project",
